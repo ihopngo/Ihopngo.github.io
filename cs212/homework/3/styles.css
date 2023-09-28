@@ -1,6 +1,7 @@
 body {
     background-color: lightblue;
     font-family: "Quiska";
+    font-size: xx-large;
 }
 
 @font-face {
@@ -15,5 +16,5 @@ body {
 
 h1 {
     font-family: "Brodies", sans-serif;
-    font-size: xx-large;
+    font-size: 80px;
 }
