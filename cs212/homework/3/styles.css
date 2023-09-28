@@ -18,3 +18,11 @@ h1 {
     font-family: "Brodies", sans-serif;
     font-size: 80px;
 }
+
+p.one {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-width: 5px;
+    padding: 5px;
+    border: lightgreen;
+}
