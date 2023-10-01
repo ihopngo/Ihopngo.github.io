@@ -26,3 +26,12 @@ p.one {
     padding: 5px;
     border: lightgreen;
 }
+
+main {
+    p.one {
+        margin-left: 10px;
+        margin-right: 10px;
+        border-width: 5px;
+        padding: 5px;
+        border: lightgreen;
+}
