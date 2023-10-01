@@ -27,8 +27,15 @@ p.one {
     border: lightgreen;
 }
 
-main {
-    p.one {
+main{
+        margin-left: 10px;
+        margin-right: 10px;
+        border-width: 5px;
+        padding: 5px;
+        border: lightgreen;
+}
+
+img {
         margin-left: 10px;
         margin-right: 10px;
         border-width: 5px;
