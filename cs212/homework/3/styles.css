@@ -14,31 +14,8 @@ body {
     src: url(font/Quiska.ttf) format('truetype');
 }
 
-h1 {
-    font-family: "Brodies", sans-serif;
-    font-size: 80px;
-}
-
-p.one {
-    margin-left: 10px;
-    margin-right: 10px;
-    border-width: 5px;
-    padding: 5px;
-    border: lightgreen;
-}
-
-main{
-        margin-left: 10px;
-        margin-right: 10px;
-        border-width: 5px;
-        padding: 5px;
-        border: lightgreen;
-}
-
-img {
-        margin-left: 10px;
-        margin-right: 10px;
-        border-width: 5px;
-        padding: 5px;
-        border: lightgreen;
+h1, h2, h3, h4, h5, h6 {
+    font-size: 40px;
+    background-color: lightpink;
+    text-align: center;
 }
