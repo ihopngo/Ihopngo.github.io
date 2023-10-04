@@ -1,7 +1,12 @@
 body {
-    background-color: lightblue;
+    background-color: white;
     font-family: "Quiska";
-    font-size: xx-large;
+    margin: 5em;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: "Brodies";
 }
 
 @font-face {
@@ -14,8 +19,28 @@ body {
     src: url(font/Quiska.ttf) format('truetype');
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 40px;
-    background-color: lightpink;
+h1 {
+    font-size: 3rem;
     text-align: center;
+    margin-top: 1.5em;
+    padding: 1em;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+    background-color: white;
+    padding: 0.5em;
+    padding-bottom: 0.2em;
+    text-align: left;
+    margin
+}
+
+img.him {
+    float: left;
+    padding: 1.3em;
+}
+
+img.police {
+    float: right;
+    padding: 1.3em;
 }
