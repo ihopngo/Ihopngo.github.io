@@ -1,7 +1,9 @@
 body {
     background-color: white;
     font-family: "Quiska";
-    margin: 5em;
+    padding: 10em;
+    border: lightblue 10em;
+    margin: 10em;
 }
 
 p {
@@ -36,8 +38,8 @@ h2, h3, h4, h5, h6 {
 }
 
 img.him {
-    float: left;
     padding: 1.3em;
+    
 }
 
 img.police {
