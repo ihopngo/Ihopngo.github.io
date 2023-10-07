@@ -1,9 +1,10 @@
 body {
     background-color: white;
     font-family: "Quiska";
-    padding: 10em;
-    border: lightblue 10em;
-    margin: 10em;
+    padding: 15em;
+    border: 10px;
+    border-color: lightblue;
+    
 }
 
 p {
@@ -34,7 +35,6 @@ h2, h3, h4, h5, h6 {
     padding: 0.5em;
     padding-bottom: 0.2em;
     text-align: left;
-    margin
 }
 
 img.him {
