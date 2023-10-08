@@ -14,19 +14,19 @@
     font-weight: bold;
     }
 
- @font-face {
-        font-family: "Wigenda Italic";
-        src: url(font/Wigenda-Italic.ttf) format('truetype');
-     }
-    
-
 header {
     font-size: 1.5rem;
     text-align: center;
     background-color: #cdeefd;
     padding-top: .01em;
-    padding-bottom: .01em;
+    padding-bottom: 1px;
     font-family: "Brodies";
+}
+
+nav {
+    background-color: lightcoral;
+    padding: 0.1px;
+    margin-top: 10px;
 }
 
 main {
@@ -39,17 +39,20 @@ main {
 }
 
 h3 {
+    display: block;
     font-size: 2rem;
     background-color: white;
-    padding: 1.5em;
-    padding-bottom: 0.1em;
+    padding-top: 1em;
+    padding-bottom: .01em;
     text-align: left;
+    
 }
 
 p {
     font-size: 1.2rem;
     font-family: "Wigenda";
     text-indent: 2.5em;
+    line-height: 1.75rem;
 }
 
 img.him {
@@ -63,6 +66,7 @@ figure {
     display: block;
     padding: 1em;
     border: solid .25em lightcoral;
+    margin: 2rem;
       
 }
 
@@ -81,4 +85,17 @@ img.police {
     padding: 1.3em;
     margin-left: auto;
     margin-right: auto;
+}
+
+p.footer {
+    display: block;
+    background-color: #cdeefd;
+    text-indent: 50rem;
+    padding: 1.5rem;
+}
+
+a.footer {
+    display: block;
+    background-color: lightcoral;
+    text-indent: 35%;
 }
