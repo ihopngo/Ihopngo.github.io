@@ -1,48 +1,84 @@
-body {
-    background-color: white;
-    font-family: "Quiska";
-    padding: 15em;
-    border: 10px;
-    border-color: lightblue;
+@font-face {
+    font-family: "Brodies";
+    src: url(font/brodies.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Wigenda";
+    src: url(font/Wigenda.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Wigenda";
+    src: url(font/Wigenda-Bold.ttf) format('truetype');
+    font-weight: bold;
+    }
+
+ @font-face {
+        font-family: "Wigenda Italic";
+        src: url(font/Wigenda-Italic.ttf) format('truetype');
+     }
     
+
+header {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #cdeefd;
+    padding-top: .01em;
+    padding-bottom: .01em;
+    font-family: "Brodies";
+}
+
+main {
+    display: block;
+    background-color: white;
+    font-family: "Brodies";
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 2rem;
+    background-color: white;
+    padding: 1.5em;
+    padding-bottom: 0.1em;
+    text-align: left;
 }
 
 p {
     font-size: 1.2rem;
-    font-family: "Brodies";
-}
-
-@font-face {
-        font-family: "Brodies" ;
-        src: url(font/brodies.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: "Quiska";
-    src: url(font/Quiska.ttf) format('truetype');
-}
-
-h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 1.5em;
-    padding: 1em;
-}
-
-h2, h3, h4, h5, h6 {
-    font-size: 2rem;
-    background-color: white;
-    padding: 0.5em;
-    padding-bottom: 0.2em;
-    text-align: left;
+    font-family: "Wigenda";
+    text-indent: 2.5em;
 }
 
 img.him {
+    display: block;
     padding: 1.3em;
-    
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+figure {
+    display: block;
+    padding: 1em;
+    border: solid .25em lightcoral;
+      
+}
+
+figcaption {
+    text-align: center;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Wigenda";
+    font-style: italic;
+    font-size: 1.1rem;
 }
 
 img.police {
-    float: right;
+    display: block;
     padding: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
 }
