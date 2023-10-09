@@ -18,8 +18,7 @@ header {
     font-size: 1.5rem;
     text-align: center;
     background-color: #cdeefd;
-    padding-top: .01em;
-    padding-bottom: 1px;
+    padding: .01em 0em 1px 0em;
     font-family: "Brodies";
 }
 
@@ -27,6 +26,7 @@ nav {
     background-color: lightcoral;
     padding: 0.1px;
     margin-top: 10px;
+    color: white;
 }
 
 main {
@@ -38,11 +38,20 @@ main {
     margin-right: auto;
 }
 
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+hr.top {
+    margin-top: 2.5em;
+}
+
 h3 {
     display: block;
     font-size: 2rem;
     background-color: white;
-    padding-top: 1em;
+    padding-top: .5em;
     padding-bottom: .01em;
     text-align: left;
     
@@ -53,6 +62,7 @@ p {
     font-family: "Wigenda";
     text-indent: 2.5em;
     line-height: 1.75rem;
+    font-weight: bold;
 }
 
 img.him {
@@ -90,12 +100,16 @@ img.police {
 p.footer {
     display: block;
     background-color: #cdeefd;
-    text-indent: 50rem;
+    text-indent: 1em;
     padding: 1.5rem;
 }
 
-a.footer {
+p.email {
     display: block;
     background-color: lightcoral;
-    text-indent: 35%;
+    text-indent: 2em;
+    padding-bottom: .25em;
+    padding-top: .25em;
+    color: white;
 }
+
