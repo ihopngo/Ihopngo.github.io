@@ -8,11 +8,10 @@
     src: url(font/Wigenda.ttf) format('truetype');
 }
 
-@font-face {
-    font-family: "Wigenda";
-    src: url(font/Wigenda-Bold.ttf) format('truetype');
-    font-weight: bold;
-    }
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
 header {
     font-size: 1.5rem;
@@ -77,6 +76,7 @@ figure {
     padding: 1em;
     border: solid .25em lightcoral;
     margin: 2rem;
+    padding: 1em;
       
 }
 
