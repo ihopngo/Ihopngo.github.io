@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+    font-family: "Quiska";
+}
+
+@font-face {
+        font-family: "Brodies" ;
+        src: url(font/brodies.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Quiska";
+    src: url(font/Quiska.ttf) format('truetype');
+}
+
+h1 {
+    font-family: "Brodies", sans-serif;
+    font-size: xx-large;
+}
