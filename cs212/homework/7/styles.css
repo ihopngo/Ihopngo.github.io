@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+      'header header header'
+      'nav main aside'
+      'footer footer footer';   
+  
+    height: 100vh;
+  }
+
+header {
+    grid-area: header;
+    background-image: url('images/borzoi_hero.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    font-size: 1.5rem;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    font-size: 1.5em;
+}
+
+footer {
+    grid-area: footer;
+}
