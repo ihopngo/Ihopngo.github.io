@@ -1,5 +1,12 @@
-var button = document.getElementById("yesbutton");
+function quiz(ans) {
+    if (ans == 'yes')
+    {
+        message = 'correct'
+    }
+    else if (ans == 'no')
+    {
+        message = 'wrong'
+    }
 
-if (button.addEventListener('click', function() {
-    alert('Correct');
-}));
+    document.getElementById('output').innerHTML = message;
+}

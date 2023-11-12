@@ -80,3 +80,19 @@ h1 {
     padding: 1em;
     max-width: fit-content;
 }
+
+.yesbutton {
+    background-color: rgb(255, 115, 0);
+    border: none;
+    color: white;
+    padding: .75em;
+    border-radius: 10%;
+}
+
+.nobutton {
+    background-color: rgb(255, 115, 0);
+    border: none;
+    color: white;
+    padding: .75em;
+    border-radius: 10%;
+}
