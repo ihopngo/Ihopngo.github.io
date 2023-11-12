@@ -1,1 +1,5 @@
-var number = 0
+var button = document.getElementById("yesbutton");
+
+if (button.addEventListener('click', function() {
+    alert('Correct');
+}));
