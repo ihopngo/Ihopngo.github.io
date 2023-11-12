@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
@@ -20,24 +21,38 @@ header {
     background-image: url('images/borzoi_hero.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 700px;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
     grid-area: nav;
     font-size: 1.5rem;
+    padding: 0 1em 0 1em;
+    line-height: 0.5em;
+    color: rgb(255, 115, 0);
+}
+
+a {
+    text-decoration: none;
 }
 
 main {
     grid-area: main;
+    color: rgb(255, 115, 0);
 }
 
 aside {
     grid-area: aside;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    color: rgb(255, 115, 0);
 }
 
 footer {
     grid-area: footer;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    height: 200px;
 }
