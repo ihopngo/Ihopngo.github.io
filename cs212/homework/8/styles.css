@@ -1,12 +1,98 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.container {
-    
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 5fr 0.5fr;
+    grid-template-areas: 
+      'header header header'
+      'nav main aside'
+      'footer footer footer';   
+  
+    height: 100vh;
+  }
+
+header {
+    grid-area: header;
+    background-image: url('images/borzoi_hero.jpg'); 
+    background-size: 70vh cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 2px;
+    height: 40em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    grid-area: nav;
+    font-size: 1.5rem;
+    padding: 0 1em 0 1em;
+    line-height: 0.5em;
+    color: rgb(255, 115, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    color: rgb(255, 115, 0);
+    padding: 0 5em 1.25em 5em;
+    font-size: 1.5rem;
+
+}
+
+aside {
+    grid-area: aside;
+    font-size: 1.5rem;
+    color: rgb(255, 115, 0);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    height: 200px;
+}
+
+h1 {
+    position: relative;
+    top: 2em;
+    left: 3.5em;
+    font-size: 6rem;
+}
+
+.game-container {
+    width: 500px;
+    min-width: fit-content;
+    border: 5px solid darkorange;
+    padding: 15px;
+    border-radius: 10px;
+    color: black;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 2, auto;
+    grid-template-rows: 1;
+    margin: 20px 5px 5px 5px;
+    gap: 5px;
+}
+
+.button {
+    background-color: darkorange;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.button:hover {
+    border-color: rgb(51, 15, 0);
 }
