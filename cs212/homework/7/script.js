@@ -1,12 +1,7 @@
-function quiz(ans) {
-    if (ans == 'yes')
-    {
-        message = 'correct'
-    }
-    else if (ans == 'no')
-    {
-        message = 'wrong'
-    }
+function yes() {
+    document.getElementById("output") = "correct"
+}
 
-    document.getElementById('output').innerHTML = message;
+function no() {
+    document.getElementById("output") = "wrong"
 }

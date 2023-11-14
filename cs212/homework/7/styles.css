@@ -81,7 +81,7 @@ h1 {
     max-width: fit-content;
 }
 
-.yesbutton {
+.buttons {
     background-color: rgb(255, 115, 0);
     border: none;
     color: white;
