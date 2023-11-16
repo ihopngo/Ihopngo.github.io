@@ -34,7 +34,7 @@ function showOptions(textInfo) {
 }
 
 function endingImage() {
-    imageElement.innerHTML = endImage;
+    imageElement.innerHTML = '<img src="${endImage}" alt="Ending Image">';
 }
 
 function buttonOptions(option) {
