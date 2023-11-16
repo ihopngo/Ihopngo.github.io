@@ -1,5 +1,6 @@
 const textElement = document.getElementById('text')
 const buttonsElement = document.getElementById('buttons')
+const imageElement = document.getElementById('image')
 
 let collar = {}
 
@@ -12,6 +13,13 @@ function showText(textInfo) {
     const text = storyInfo.find((item) => item.id === textInfo).text;
             textElement.innerHTML = `<p>${text}</p>`;
             showOptions(textInfo);
+
+            if (end == true) {
+                endingImage(endImage);
+            } 
+            else {
+                showOptions(textInfo);
+            }
 }
 
 function showOptions(textInfo) {
@@ -25,6 +33,9 @@ function showOptions(textInfo) {
     }
 }
 
+function endingImage() {
+    imageElement.innerHTML = endImage;
+}
 
 function buttonOptions(option) {
     if (option.setCollar) {
@@ -74,10 +85,80 @@ const storyInfo = [
             },
             {
                 text: 'Stay home',
-                nextText: 15
+                nextText: 101,
+                end: true,
+                endImage: 'Happy_Life.jpg'
             }
         ]
     },
+    {
+        id: 4,
+        text: 'After running outside you have two options, you can go left where you see a road with tons of cars driving by really fast or you can go right where it is just tons of houses for as long as you can see?',
+        options: [
+            {
+                text: 'go left',
+                nextText: 5      
+            },
+            {
+                text: 'go right',
+                nextText: 10
+            },
+            {
+                text: 'turn around and go back home',
+                nextText: 14
+            }
+        ]
+    },
+    {
+        id: 5,
+        text: 'At the road, cars are driving really fast and your really scared, but its the only way to continue on your journey also you a dog that doesn\'t know whats going on',
+        options: [
+            {
+                text: 'find the nearest crosswalk and look both ways before you cross the busy road',
+                nextText: 6
+            },
+            {
+                text: 'run as fast as you can like your life depends on it',
+                next: 103
+            },
+            {
+                text: 'Go home this life is too much for you',
+                next: 14
+            }
+        ]
+    },
+    {
+        id: 6,
+        text: 'Your little dog heart is going crazy but now there is no turning back, you continue forward where you see ...',
+        options: [
+            {
+                text: 'die'
+            }
+        ]
+    },
+    {
+        id: 20,
+        text: 'Your now an older dog still waiting to be adopted at petsmart and you see another family walk in looking for a dog',
+        options: [
+            {
+                text: 'smile with your tounge sticking out',
+                next: 42
+            },
+            {
+                text: 'sleep through it again',
+                nextText: 21
+            }
+        ]
+    },
+    {
+        id: 21,
+        text: 'Your an old dog who still hasn\'t been adopted, so you got moved to the nearest adoption center and you see a family looking to adopt an older dog',
+        options: [
+            {
+                text: ''
+            }
+        ]
+    }
 ];
 
 startGame()
