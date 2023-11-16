@@ -87,7 +87,6 @@ const storyInfo = [
                 text: 'Stay home',
                 nextText: 101,
                 end: true,
-                endImage: 'Happy_Life.jpg'
             }
         ]
     },
@@ -155,9 +154,26 @@ const storyInfo = [
         text: 'Your an old dog who still hasn\'t been adopted, so you got moved to the nearest adoption center and you see a family looking to adopt an older dog',
         options: [
             {
-                text: ''
+                text: 'Smile',
+                nextText: 80
+            },
+            {
+                text: 'sleep one last time',
+                nextText: 102,
+                end: true
             }
         ]
+    },
+    {
+        id: 101,
+        text: 'You live with the family that adopted you for the rest of your life and live a happy existence',
+        endImage: 'Happy_life.jpg'
+    },
+    {
+        id: 102,
+        text: 'You never got adopted and never had a family take care of you, it was a hard life and now you go to sleep for the last time',
+        end: true,
+        endImage: 'Never_adopted.jpg'
     }
 ];
 
