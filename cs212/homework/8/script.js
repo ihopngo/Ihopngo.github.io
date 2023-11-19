@@ -63,7 +63,7 @@ const storyInfo = [
             },
             {
                 text: 'sleep',
-                nextText: 20
+                nextText: 95
             }
         ]
     },
@@ -106,11 +106,90 @@ const storyInfo = [
             },
             {
                 text: 'go right',
-                nextText: 10
+                nextText: 20
             },
             {
                 text: 'turn around and go back home',
-                nextText: 14
+                nextText: 101
+            }
+        ]
+    },
+    {
+        id: 20,
+        text: 'Going right you venture deeper into the neighborhood for 30 minutes seeing tons of people and all kinds of homes, eventually a person sees you and puts you in their vehicle.',
+        options: [
+            {
+                text: 'Enjoy the ride and see where they take you',
+                nextText: 104
+            },
+            {
+                text: 'Bite the dognapper',
+                nextText: 21
+            }
+        ]
+    },
+    {
+        id: 21,
+        text: 'After you bite the dognapper you have enter a flight or fight scenerio',
+        options: [
+            {
+                text: 'Continue to bite the dognapper',
+                nextText: 22
+            },
+            {
+                text: 'Run away as fast as you can',
+                nextText: 30
+            }
+        ]
+    },
+    {
+        id: 22,
+        text: 'You continue to bite the dognapper until eventually someone witnesses you attacking and calls the pound on you, they arrive and capture you and bring you to the pound',
+        options: [
+            {
+                
+            }
+        ]
+    },
+    {
+        id: 30,
+        text: 'After running away for your life, you get lost and have no idea where you are at, now your hungry and you see a giant truck with food on it drive by',
+        options: [
+            {
+                text: 'Chase the truck',
+                nextText: 105
+            },
+            {
+                text: 'Look for food nearby',
+                nextText: 31
+            }
+        ]
+    },
+    {
+        id: 31,
+        text: 'After looking around for an hour you finally found food in the trash, theres leftover lasanga and chocolate',
+        options: [
+            {
+                text: 'Eat the lasanga only',
+                nextText: 32
+            },
+            {
+                text: 'Eat the chocolate to fill yourself up',
+                nextText: 106
+            }
+        ]
+    },
+    {
+        id: 32,
+        text: 'Your still still hungry, but you have to keep moving on your adventure',
+        options: [
+            {
+                text: 'IDK',
+                nextText: 22
+            },
+            {
+                text: 'IDK 2',
+                nextText: 40
             }
         ]
     },
@@ -142,7 +221,7 @@ const storyInfo = [
         ]
     },
     {
-        id: 20,
+        id: 95,
         text: 'Your now an older dog still waiting to be adopted at petsmart and you see another family walk in looking for a dog',
         options: [
             {
@@ -151,12 +230,12 @@ const storyInfo = [
             },
             {
                 text: 'sleep through it again',
-                nextText: 21
+                nextText: 96
             }
         ]
     },
     {
-        id: 21,
+        id: 96,
         text: 'Your an old dog who still hasn\'t been adopted, so you got moved to the nearest adoption center and you see a family looking to adopt an older dog',
         options: [
             {
@@ -169,9 +248,10 @@ const storyInfo = [
             }
         ]
     },
-    {
+    {   
         id: 101,
         text: 'You live with the family that adopted you for the rest of your life and live a happy existence',
+        end: true,
         endImage: 'Happy_life.jpg'
     },
     {
@@ -179,7 +259,43 @@ const storyInfo = [
         text: 'You never got adopted and never had a family take care of you, it was a hard life and now you go to sleep for the last time',
         end: true,
         endImage: 'Never_adopted.jpg'
-    }
+    },
+    {
+        id: 103,
+        text: 'You died trying to run across the road with being cautious',
+        end: true,
+        endingImage: 'Borzoi_car.jpg'
+    },
+    {
+        id: 104,
+        text: 'The ride ends at a house where you are met with a child who hugs you and evenrtually you get used to this family and you live with them for the rest of your life',
+        end: true,
+        endingImage: 'New_family.jpeg'
+    },
+    {
+        id: 105,
+        text: 'After chasing the truck for 15 minutes you eventually lose it, finding yourself lost and exhausted without food you decide to live in a box until you starve without food',
+        end: true,
+        endingImage: 'Borzoi_chase.jpg'
+    },
+    {
+        id: 106,
+        text: 'Your filled up and ready to keep moving, but you don\'t feel good the chocolate you ate is posioning to you so you find a place to rest and sleep, you die',
+        end: true,
+        endingImage: 'Borzou_poison.webp'
+    },
+    {
+        id: 107,
+        text: '',
+        end: true,
+        endingImage: 1
+    },
+    {
+        id: 108,
+        text: '',
+        end: true,
+        endingImage: 1
+    },
 ];
 
 startGame()
