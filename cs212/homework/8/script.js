@@ -27,7 +27,7 @@ function showOptions(textInfo) {
 }
 
 function endingImage(endImage) {
-    imageElement.innerHTML = `<img src="${endImage}" alt="Ending Image" style="max-width: 100%;">`;
+    imageElement.innerHTML = `<img src="${endImage}" alt="Ending Image">`;
 }
 
 function buttonOptions(option) {
@@ -41,8 +41,6 @@ function buttonOptions(option) {
         showText(option.nextText);
     }
 }
-
-
 
 const storyInfo = [
     {
@@ -85,6 +83,7 @@ const storyInfo = [
             {
                 text: 'Stay home',
                 nextText: 101,
+                end: true
             }
         ]
     },
@@ -158,12 +157,14 @@ const storyInfo = [
             {
                 text: 'sleep one last time',
                 nextText: 102,
+                end: true
             }
         ]
     },
     {
         id: 101,
         text: 'You live with the family that adopted you for the rest of your life and live a happy existence',
+        end: true,
         endImage: 'Happy_life.jpg'
     },
     {
