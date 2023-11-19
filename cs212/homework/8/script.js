@@ -26,7 +26,7 @@ function showOptions(textInfo) {
     }
 }
 
-function endingImage(endImage) {
+function endingImage() {
     imageElement.innerHTML = `<img src="endimages/${endImage}" alt="Ending Image">`;
 }
 
@@ -36,6 +36,7 @@ function buttonOptions(option) {
     }
 
     else if (option.end == true) {
+        showText(option.nextText);
         endingImage(option.endImage);
     } else {
         showText(option.nextText);
