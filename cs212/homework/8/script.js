@@ -12,7 +12,14 @@ function startGame() {
 function showText(textInfo) {
     const text = storyInfo.find((item) => item.id === textInfo).text;
     textElement.innerHTML = `<p>${text}</p>`;
-    showOptions(textInfo);
+    
+    if (option.end == true) {
+        textElement.innerHTML = `<p>${text}</p>`;
+        /* showText(option.nextText); */
+        endingImage(option.endImage);
+    } else {
+        showOptions(textInfo);
+    }
 }
 
 function showOptions(textInfo) {
@@ -27,19 +34,12 @@ function showOptions(textInfo) {
 }
 
 function endingImage() {
-    imageElement.innerHTML = `<img src="endimages/${endImage}" alt="Ending Image">`;
+    imageElement.innerHTML = '<img src="endimages/${endImage}" alt="Ending Image">';
 }
 
 function buttonOptions(option) {
     if (option.setCollar) {
         collar = Object.assign(collar, option.setCollar);
-    }
-
-    else if (option.end == true) {
-        showText(option.nextText);
-        endingImage(option.endImage);
-    } else {
-        showText(option.nextText);
     }
 }
 
