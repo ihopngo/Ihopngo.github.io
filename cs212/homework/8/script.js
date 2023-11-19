@@ -17,9 +17,10 @@ function showText(textInfo) {
     const text = currentStoryItem.text;
     textElement.innerHTML = `<p>${text}</p>`;
     
-    if (currentStoryItem.end == true) {
+    if (currentStoryItem.end) {
         endingImage(currentStoryItem.endImage);
-    } else {
+    } 
+    else {
         showOptions(textInfo);
     }
 }
@@ -57,8 +58,8 @@ function buttonOptions(option) {
             }
         }
         endingImage(option.endImage);
-
-    } else {
+    } 
+    else {
         showText(option.nextText);
     }
 }
@@ -159,7 +160,7 @@ const storyInfo = [
         text: 'You continue to bite the dognapper until eventually someone witnesses you attacking and calls the pound on you, they arrive and capture you and bring you to the pound',
         options: [
             {
-                text: 'Continue',
+                text: 'Sleep',
                 nextText: 107
             }
        ]
@@ -265,7 +266,7 @@ const storyInfo = [
         id: 101,
         text: 'Ending #1: You live with the family that adopted you for the rest of your life and live a happy existence',
         end: true,
-        endImage: 'Happy_life.jpg'
+        endImage: 'Happy_Life.jpg'
     },
     {
         id: 102,
@@ -295,11 +296,10 @@ const storyInfo = [
         id: 106,
         text: 'Ending #6: Your filled up and ready to keep moving, but you don\'t feel good the chocolate you ate is posioning to you so you find a place to rest and sleep, you die',
         end: true,
-        endImage: 'Borzou_poison.webp'
+        endImage: 'Borzou_poison.jpg'
     },
     {
         id: 107,
-        end: true,
         collarEnd: true,
     },
     {
