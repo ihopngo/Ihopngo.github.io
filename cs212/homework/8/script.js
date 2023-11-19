@@ -35,7 +35,7 @@ function buttonOptions(option) {
         collar = Object.assign(collar, option.setCollar);
     } 
     
-    else if (end == true) {
+    else if (option.end == true) {
         endingImage(option.endImage);
     } 
     else {
