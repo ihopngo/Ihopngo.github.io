@@ -9,7 +9,7 @@ function startGame() {
     showText(1)
 }
 
-function showText(textInfo) {
+function showText(storyInfo) {
     const text = storyInfo.find((item) => item.id === textInfo).text;
             textElement.innerHTML = `<p>${text}</p>`;
             showOptions(textInfo);
@@ -17,9 +17,6 @@ function showText(textInfo) {
             if (end == true) {
                 endingImage(endImage);
             } 
-            else {
-                showOptions(textInfo);
-            }
 }
 
 function showOptions(textInfo) {
@@ -30,6 +27,10 @@ function showOptions(textInfo) {
         button.innerText = option.text;
         button.addEventListener('click', () => buttonOptions(option));
         buttonsElement.appendChild(button);
+    }
+    const end = options.some((option) => option.end);
+    if (end) {
+      endingImage(storyInfo.find((item) => item.id === textInfo).endImage);
     }
 }
 
