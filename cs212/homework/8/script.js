@@ -13,7 +13,7 @@ function showText(textInfo) {
     const text = storyInfo.find((item) => item.id === textInfo).text;
     textElement.innerHTML = `<p>${text}</p>`;
     
-    if (option.end == true) {
+    if (storyInfo.end == true) {
         textElement.innerHTML = `<p>${text}</p>`;
         /* showText(option.nextText); */
         endingImage(option.endImage);
@@ -33,8 +33,8 @@ function showOptions(textInfo) {
     }
 }
 
-function endingImage() {
-    imageElement.innerHTML = '<img src="endimages/${endImage}" alt="Ending Image">';
+function endingImage(endImage) {
+    imageElement.innerHTML = `<img src="endimages/${endImage}" alt="Ending Image">`;
 }
 
 function buttonOptions(option) {
