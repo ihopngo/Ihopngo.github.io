@@ -9,7 +9,7 @@ function startGame() {
     showText(1)
 }
 
-function showText(storyInfo) {
+function showText(textInfo) {
     const text = storyInfo.find((item) => item.id === textInfo).text;
             textElement.innerHTML = `<p>${text}</p>`;
             showOptions(textInfo);
@@ -35,7 +35,7 @@ function showOptions(textInfo) {
 }
 
 function endingImage() {
-    imageElement.innerHTML = '<img src="${endImage}" alt="Ending Image">';
+    imageElement.innerHTML = `<img src="${endImage}" alt="Ending Image">`;
 }
 
 function buttonOptions(option) {
