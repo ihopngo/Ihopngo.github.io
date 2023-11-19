@@ -18,7 +18,7 @@ function showText(textInfo) {
 function showOptions(textInfo) {
     const options = storyInfo.find((item) => item.id === textInfo).options;
     buttonsElement.innerHTML = '';
-    for (const option of storyInfo.options) {
+    for (const option of options) {
         const button = document.createElement('button');
         button.innerText = option.text;
         button.addEventListener('click', () => buttonOptions(option));
