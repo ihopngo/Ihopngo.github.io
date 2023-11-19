@@ -10,9 +10,18 @@ function startGame() {
 }
 
 function showText(textInfo) {
-    const text = storyInfo.find((item) => item.id === textInfo).text;
+    /* const text = storyInfo.find((item) => item.id === textInfo).text;
     textElement.innerHTML = `<p>${text}</p>`;
-    showOptions(textInfo);
+    showOptions(textInfo); */
+    const currentStoryItem = storyInfo.find((item) => item.id === textInfo);
+    const text = currentStoryItem.text;
+    textElement.innerHTML = `<p>${text}</p>`;
+    
+    if (currentStoryItem.end == true) {
+        endingImage(currentStoryItem.endImage);
+    } else {
+        showOptions(textInfo);
+    }
 }
 
 function showOptions(textInfo) {
@@ -27,7 +36,7 @@ function showOptions(textInfo) {
 }
 
 function endingImage(endImage) {
-    imageElement.innerHTML = `<img src='endimages/${endImage}' alt="Ending Image">`;
+    imageElement.innerHTML = `<img src='endimages/${endImage}' "alt="Ending Image">`;
 }
 
 function buttonOptions(option) {
@@ -35,7 +44,7 @@ function buttonOptions(option) {
         collar = Object.assign(collar, option.setCollar);
     }
 
-    if (option.end) {
+    else if (option.end) {
         endingImage(option.endImage);
     } else {
         showText(option.nextText);
