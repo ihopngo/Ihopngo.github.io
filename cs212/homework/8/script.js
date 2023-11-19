@@ -27,7 +27,7 @@ function showOptions(textInfo) {
 }
 
 function endingImage(endImage) {
-    imageElement.innerHTML = `<img src="${endImage}" alt="Ending Image">`;
+    imageElement.innerHTML = `<img src='endimages/${endImage}' alt="Ending Image">`;
 }
 
 function buttonOptions(option) {
@@ -83,8 +83,7 @@ const storyInfo = [
             },
             {
                 text: 'Stay home',
-                nextText: 101,
-                end: true,
+                nextText: 101
             }
         ]
     },
