@@ -1,18 +1,18 @@
-const textElement = document.getElementById('text');
-const buttonsElement = document.getElementById('buttons');
-const imageElement = document.getElementById('image');
+const textElement = document.getElementById('text')
+const buttonsElement = document.getElementById('buttons')
+const imageElement = document.getElementById('image')
 
-let collar = {};
+let collar = {}
 
 function startGame() {
-    collar = {};
-    showText(1);
+    collar = {}
+    showText(1)
 }
 
 function showText(textInfo) {
     const text = storyInfo.find((item) => item.id === textInfo).text;
-    textElement.innerHTML = `<p>${text}</p>`;
-    showOptions(textInfo);
+            textElement.innerHTML = `<p>${text}</p>`;
+            showOptions(textInfo);
 }
 
 function showOptions(textInfo) {
@@ -27,21 +27,19 @@ function showOptions(textInfo) {
 }
 
 function endingImage(endImage) {
-    imageElement.innerHTML = `<img src="endimages/${endImage}" alt="Ending Image">`;
+    imageElement.innerHTML = `<img src="${endImage}" alt="Ending Image">`;
 }
 
 function buttonOptions(option) {
     if (option.setCollar) {
         collar = Object.assign(collar, option.setCollar);
-    }
-
-    else if (storyInfo.end == true) {
-        const endImage = storyInfo.find((item) => item.id === textInfo).endImage
-        const text = storyInfo.find((item) => item.id === textInfo).text;
-        textElement.innerHTML = `<p>${text}</p>`;
-        endingImage(endImage);
-    } else {
-        showText(options);
+    } 
+    
+    else if (end == true) {
+        endingImage(option.endImage);
+    } 
+    else {
+        showOptions(option.textInfo);
     }
 }
 
@@ -86,7 +84,7 @@ const storyInfo = [
             {
                 text: 'Stay home',
                 nextText: 101,
-                end: true
+                end: true,
             }
         ]
     },
@@ -167,7 +165,6 @@ const storyInfo = [
     {
         id: 101,
         text: 'You live with the family that adopted you for the rest of your life and live a happy existence',
-        end: true,
         endImage: 'Happy_life.jpg'
     },
     {
