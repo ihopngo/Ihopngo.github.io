@@ -11,8 +11,8 @@ function startGame() {
 
 function showText(textInfo) {
     const text = storyInfo.find((item) => item.id === textInfo).text;
-            textElement.innerHTML = `<p>${text}</p>`;
-            showOptions(textInfo);
+    textElement.innerHTML = `<p>${text}</p>`;
+    showOptions(textInfo);
 }
 
 function showOptions(textInfo) {
@@ -33,15 +33,15 @@ function endingImage(endImage) {
 function buttonOptions(option) {
     if (option.setCollar) {
         collar = Object.assign(collar, option.setCollar);
-    } 
-    
-    else if (option.end == true) {
+    }
+
+    if (option.end) {
         endingImage(option.endImage);
-    } 
-    else {
-        showOptions(option.textInfo);
+    } else {
+        showText(option.nextText);
     }
 }
+
 
 const storyInfo = [
     {
