@@ -26,7 +26,7 @@ function showOptions(textInfo) {
     }
 }
 
-function endingImage() {
+function endingImage(endImage) {
     imageElement.innerHTML = `<img src="endimages/${endImage}" alt="Ending Image">`;
 }
 
@@ -36,11 +36,12 @@ function buttonOptions(option) {
     }
 
     else if (storyInfo.end == true) {
+        const endImage = storyInfo.find((item) => item.id === textInfo).endImage
         const text = storyInfo.find((item) => item.id === textInfo).text;
         textElement.innerHTML = `<p>${text}</p>`;
-        endingImage(storyInfo.endImage);
+        endingImage(endImage);
     } else {
-        showText(storyInfo.nextText);
+        showText(options);
     }
 }
 
