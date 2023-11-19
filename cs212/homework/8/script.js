@@ -264,25 +264,25 @@ const storyInfo = [
         id: 103,
         text: 'You died trying to run across the road with being cautious',
         end: true,
-        endingImage: 'Borzoi_car.jpg'
+        endImage: 'Borzoi_car.jpg'
     },
     {
         id: 104,
         text: 'The ride ends at a house where you are met with a child who hugs you and evenrtually you get used to this family and you live with them for the rest of your life',
         end: true,
-        endingImage: 'New_family.jpeg'
+        endImage: 'New_family.jpeg'
     },
     {
         id: 105,
         text: 'After chasing the truck for 15 minutes you eventually lose it, finding yourself lost and exhausted without food you decide to live in a box until you starve without food',
         end: true,
-        endingImage: 'Borzoi_chase.jpg'
+        endImage: 'Borzoi_chase.jpg'
     },
     {
         id: 106,
         text: 'Your filled up and ready to keep moving, but you don\'t feel good the chocolate you ate is posioning to you so you find a place to rest and sleep, you die',
         end: true,
-        endingImage: 'Borzou_poison.webp'
+        endImage: 'Borzou_poison.webp'
     },
     {
         id: 107,
