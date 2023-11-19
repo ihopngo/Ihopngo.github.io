@@ -1,22 +1,18 @@
-const textElement = document.getElementById('text')
-const buttonsElement = document.getElementById('buttons')
-const imageElement = document.getElementById('image')
+const textElement = document.getElementById('text');
+const buttonsElement = document.getElementById('buttons');
+const imageElement = document.getElementById('image');
 
-let collar = {}
+let collar = {};
 
 function startGame() {
-    collar = {}
-    showText(1)
+    collar = {};
+    showText(1);
 }
 
 function showText(textInfo) {
     const text = storyInfo.find((item) => item.id === textInfo).text;
-            textElement.innerHTML = `<p>${text}</p>`;
-            showOptions(textInfo);
-
-            if (end == true) {
-                endingImage(endImage);
-            } 
+    textElement.innerHTML = `<p>${text}</p>`;
+    showOptions(textInfo);
 }
 
 function showOptions(textInfo) {
@@ -28,14 +24,10 @@ function showOptions(textInfo) {
         button.addEventListener('click', () => buttonOptions(option));
         buttonsElement.appendChild(button);
     }
-    const end = options.some((option) => option.end);
-    if (end) {
-      endingImage(storyInfo.find((item) => item.id === textInfo).endImage);
-    }
 }
 
-function endingImage() {
-    imageElement.innerHTML = `<img src="${endImage}" alt="Ending Image">`;
+function endingImage(endImage) {
+    imageElement.innerHTML = `<img src="${endImage}" alt="Ending Image" style="max-width: 100%;">`;
 }
 
 function buttonOptions(option) {
@@ -43,8 +35,14 @@ function buttonOptions(option) {
         collar = Object.assign(collar, option.setCollar);
     }
 
-    showText(option.nextText);
+    if (option.end) {
+        endingImage(option.endImage);
+    } else {
+        showText(option.nextText);
+    }
 }
+
+
 
 const storyInfo = [
     {
@@ -87,7 +85,6 @@ const storyInfo = [
             {
                 text: 'Stay home',
                 nextText: 101,
-                end: true,
             }
         ]
     },
@@ -161,7 +158,6 @@ const storyInfo = [
             {
                 text: 'sleep one last time',
                 nextText: 102,
-                end: true
             }
         ]
     },
