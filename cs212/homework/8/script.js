@@ -35,7 +35,7 @@ function buttonOptions(option) {
         collar = Object.assign(collar, option.setCollar);
     }
 
-    if (option.end) {
+    else if (option.end == true) {
         endingImage(option.endImage);
     } else {
         showText(option.nextText);
