@@ -42,6 +42,7 @@ function endingImage(endImage) {
 function buttonOptions(option) {
     if (option.setCollar) {
         collar = Object.assign(collar, option.setCollar);
+        showText(option.nextText);
     }
 
     else if (option.end) {
@@ -226,7 +227,7 @@ const storyInfo = [
         options: [
             {
                 text: 'smile with your tounge sticking out',
-                next: 42
+                next: 2
             },
             {
                 text: 'sleep through it again',
@@ -240,7 +241,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Smile',
-                nextText: 80
+                nextText: 2
             },
             {
                 text: 'sleep one last time',
