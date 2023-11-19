@@ -35,12 +35,12 @@ function buttonOptions(option) {
         collar = Object.assign(collar, option.setCollar);
     }
 
-    else if (option.end == true) {
+    else if (storyInfo.end == true) {
         const text = storyInfo.find((item) => item.id === textInfo).text;
         textElement.innerHTML = `<p>${text}</p>`;
-        endingImage(option.endImage);
+        endingImage(storyInfo.endImage);
     } else {
-        showText(option.nextText);
+        showText(storyInfo.nextText);
     }
 }
 
