@@ -159,6 +159,7 @@ const storyInfo = [
             {
                 text: 'sleep one last time',
                 nextText: 102,
+                end: true
             }
         ]
     },
