@@ -322,37 +322,73 @@ const storyInfo = [
         id: 101,
         text: 'Ending #1: You live with the family that adopted you for the rest of your life and live a happy existence',
         end: true,
-        endImage: 'Happy_Life.jpg'
+        endImage: 'Happy_Life.jpg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 102,
         text: 'Ending #2: You never got adopted and never had a family take care of you, it was a hard life and now you go to sleep for the last time',
         end: true,
-        endImage: 'Never_adopted.jpg'
+        endImage: 'Never_adopted.jpg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 103,
         text: 'Ending #3: You died trying to run across the road with being cautious',
         end: true,
-        endImage: 'Borzoi_car.jpg'
+        endImage: 'Borzoi_car.jpg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 104,
         text: 'Ending #4: The ride ends at a house where you are met with a child who hugs you and evenrtually you get used to this family and you live with them for the rest of your life',
         end: true,
-        endImage: 'New_family.jpeg'
+        endImage: 'New_family.jpeg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 105,
         text: 'Ending #5: After chasing the truck for 15 minutes you eventually lose it, finding yourself lost and exhausted without food you decide to live in a box until you starve without food',
         end: true,
-        endImage: 'Borzoi_chase.jpg'
+        endImage: 'Borzoi_chase.jpg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 106,
         text: 'Ending #6: Your filled up and ready to keep moving, but you don\'t feel good the chocolate you ate is posioning to you so you find a place to rest and sleep, you die',
         end: true,
-        endImage: 'Borzoi_poison.jpg'
+        endImage: 'Borzoi_poison.jpg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 107,
@@ -362,43 +398,85 @@ const storyInfo = [
         id: 109,
         text: 'Ending #12: Chasing the cat you become blinded to your surroundings eventually you realise too late that your on the road, then BAM!!!',
         end: true,
-        endImage: 'Borzoi_car.jpg'
+        endImage: 'Borzoi_car.jpg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 110,
         text: 'Ending #7: After being captured by the pound, you sit in a cage for an hour until your family comes to pick you up, but the trauma still lingers',
         end: true,
-        endImage: 'Trauma.jpg'
+        endImage: 'Trauma.jpg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 111,
         text: 'Ending #8: After being captured by the pound, you get thrown into a cage where you stay for the rest of your life',
         end: true,
-        endImage: 'Borzoi_cage.jpg'
+        endImage: 'Borzoi_cage.jpg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 112,
         text: 'Ending #9: You successfully lockpick the cage with your nails, bite your way through the door and hop the fence to freedom.',
         end: true,
-        endImage: 'Borzoi_escape.gif'
+        endImage: 'Borzoi_escape.gif',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 113,
         text: 'Ending #13: The orange cat overpowers you and causes blood loss',
         end: true,
-        endImage: 'Orange_cat.gif'
+        endImage: 'Orange_cat.gif',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 114,
         text: 'Ending #10: You return home with trauma and realize you ain\'t built for these streets',
         end: true,
-        endImage: 'Trauma.jpg'
+        endImage: 'Trauma.jpg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     },
     {
         id: 115,
         text: 'Ending #11: After multiple hours of looking for your home you find that welcome mat at your front door and begin to bark for your family, until they eventually open the door for you to come back in',
         end: true,
-        endImage: 'Borzoi_backhome.jpg'
+        endImage: 'Borzoi_backhome.jpg' ,
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
     }
 ];
 
