@@ -43,6 +43,9 @@ function endingImage(endImage) {
 
 
 function buttonOptions(option) {
+    const hasCollar = storyInfo.find((item) => item.id === 110).options;
+    const noCollar = 111
+
     if (option.setCollar) {
         collar = Object.assign(collar, option.setCollar);
         acceptedCollar = true;
@@ -51,11 +54,11 @@ function buttonOptions(option) {
 
     else if (option.collarEnd) {
         if (acceptedCollar) {
-            showText(110)
+            showText(hasCollar)
             endingImage(option.endImage);
         } 
         else {
-            showText(111)
+            showText(noCollar)
             endingImage(option.endImage);
         }
     }
