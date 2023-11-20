@@ -327,7 +327,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -339,7 +339,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -351,7 +351,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -363,7 +363,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -375,7 +375,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -387,7 +387,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -403,7 +403,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -415,7 +415,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -427,7 +427,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -439,7 +439,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -451,7 +451,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -463,7 +463,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     },
@@ -475,7 +475,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: -1
+                nextText: 1
             }
         ]
     }

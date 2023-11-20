@@ -45,8 +45,10 @@ main {
     grid-area: main;
     color: rgb(255, 115, 0);
     padding: 0 5em 1.25em 5em;
-    font-size: 1.5rem;
-
+    font-size: 1.5rem;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 aside {
@@ -70,8 +72,8 @@ h1 {
 }
 
 .game-container {
-    width: auto;
-    min-width: fit-content;
+    max-width: 700px;
+    min-width: 200px;
     border: 5px solid darkorange;
     padding: 25px;
     border-radius: 10px;
