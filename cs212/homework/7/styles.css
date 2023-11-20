@@ -13,7 +13,7 @@ body {
       'nav main aside'
       'footer footer footer';   
   
-    height: 100vh;
+    min-height: 100vh;
   }
 
 header {
@@ -120,4 +120,17 @@ h1 {
     font-size: 1.25rem;
     padding-left: 3em;
     padding-right: 3em;
+}
+
+@media (max-width: 1024px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(5rem, auto) 1fr minmax(5rem,auto) auto;
+        grid-template-areas: 
+          "header"
+          "nav"
+          "main"
+          "aside"
+          "footer";
+    }
 }

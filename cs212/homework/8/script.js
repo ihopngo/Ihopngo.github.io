@@ -123,7 +123,7 @@ const storyInfo = [
             },
             {
                 text: 'turn around and go back home',
-                nextText: 101
+                nextText: 114
             }
         ]
     },
@@ -198,12 +198,40 @@ const storyInfo = [
         text: 'Your still hungry, but you have to keep moving on your adventure',
         options: [
             {
-                text: 'IDK',
-                nextText: 22
+                text: 'keep moving on your amazing journey',
+                nextText: 34
             },
             {
-                text: 'IDK 2',
-                nextText: 40
+                text: 'Try to find home now since you realize the world is dangerous',
+                nextText: 33
+            }
+        ]
+    },
+    {
+        id: 33,
+        text: 'You reach a fork in the road where you can go right to where you think home is or you can go left and take a shortcut to home',
+        options: [
+            {
+                text: 'Take a right',
+                nextText: 115
+            },
+            {
+                text: 'take a left',
+                nextText: 116
+            }
+        ]
+    },
+    {
+        id: 34,
+        text: 'Continuing on your amazing journey not long after you run into a orange cat, alerted by the smell of lasanga, the cat is angry ready to strike',
+        options: [
+            {
+                text: 'Run away',
+                nextText: 33
+            },
+            {
+                text: 'fight the rascal',
+                nextText: 113
             }
         ]
     },
@@ -316,12 +344,18 @@ const storyInfo = [
         id: 106,
         text: 'Ending #6: Your filled up and ready to keep moving, but you don\'t feel good the chocolate you ate is posioning to you so you find a place to rest and sleep, you die',
         end: true,
-        endImage: 'Borzou_poison.jpg'
+        endImage: 'Borzoi_poison.jpg'
     },
     {
         id: 107,
         end: true,
         collarEnd: true
+    },
+    {
+        id: 109,
+        text: 'Ending #12: Chasing the cat you become blinded to your surroundings eventually you realise too late that your on the road, then BAM!!!',
+        end: true,
+        endImage: 'Borzoi_car.jpg'
     },
     {
         id: 110,
@@ -342,10 +376,22 @@ const storyInfo = [
         endImage: 'Borzoi_escape.gif'
     },
     {
-        id: 15,
+        id: 113,
+        text: 'Ending #13: The orange cat overpowers you and causes blood loss',
+        end: true,
+        endImage: 'Orange_cat.gif'
+    },
+    {
+        id: 114,
         text: 'Ending #10: You return home with trauma and realize you ain\'t built for these streets',
         end: true,
         endImage: 'Trauma.jpg'
+    },
+    {
+        id: 115,
+        text: 'Ending #11: After multiple hours of looking for your home you find that welcome mat at your front door and begin to bark for your family, until they eventually open the door for you to come back in',
+        end: true,
+        endImage: 'Borzoi_backhome'
     }
 ];
 
