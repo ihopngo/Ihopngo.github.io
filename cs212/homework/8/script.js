@@ -49,14 +49,19 @@ function buttonOptions(option) {
         showText(option.nextText);
     }
 
-    else if (option.end) {
-        if (option.collarEnd) {
-            if (acceptedCollar) {
-                showText(110)
-            } else {
-                showText(111)
-            }
+    else if (option.collarEnd) {
+        if (acceptedCollar) {
+            showText(110)
+            endingImage(option.endImage);
+        } 
+        else {
+            showText(111)
+            endingImage(option.endImage);
         }
+    }
+
+    else if (option.end) {
+        
         endingImage(option.endImage);
     } 
     else {
@@ -209,7 +214,7 @@ const storyInfo = [
     },
     {
         id: 33,
-        text: 'You reach a fork in the road where you can go right to where you think home is or you can go left and take a shortcut to home',
+        text: 'You reach a fork in the road where you can go right to where you think home is or you can go left and take a shortcut to home forget the journey',
         options: [
             {
                 text: 'Take a right',
@@ -288,7 +293,7 @@ const storyInfo = [
         options: [
             {
                 text: 'smile with your tounge sticking out',
-                next: 2
+                nextText: 2
             },
             {
                 text: 'sleep through it again',
@@ -348,7 +353,6 @@ const storyInfo = [
     },
     {
         id: 107,
-        end: true,
         collarEnd: true
     },
     {
@@ -391,7 +395,7 @@ const storyInfo = [
         id: 115,
         text: 'Ending #11: After multiple hours of looking for your home you find that welcome mat at your front door and begin to bark for your family, until they eventually open the door for you to come back in',
         end: true,
-        endImage: 'Borzoi_backhome'
+        endImage: 'Borzoi_backhome.jpg'
     }
 ];
 
