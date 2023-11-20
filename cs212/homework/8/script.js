@@ -19,6 +19,7 @@ function showText(textInfo) {
     
     if (currentStoryItem.end) {
         endingImage(currentStoryItem.endImage);
+        showOptions(textInfo);
     } 
     else {
         showOptions(textInfo);
@@ -64,8 +65,8 @@ function buttonOptions(option) {
     }
 
     else if (option.end) {
-        
         endingImage(option.endImage);
+        showText(option.nextText);
     } 
     else {
         showText(option.nextText);
