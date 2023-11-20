@@ -11,9 +11,6 @@ function startGame() {
 }
 
 function showText(textInfo) {
-    /* const text = storyInfo.find((item) => item.id === textInfo).text;
-    textElement.innerHTML = `<p>${text}</p>`;
-    showOptions(textInfo); */
     const currentStoryItem = storyInfo.find((item) => item.id === textInfo);
     const text = currentStoryItem.text;
     textElement.innerHTML = `<p>${text}</p>`;
@@ -99,11 +96,12 @@ const storyInfo = [
         options: [
             {
                 text: 'Wear the collar',
-                setCollar: { collar: true },
+                setCollar: true,
                 nextText: 3
             },
             {
                 text: 'TEAR IT OFF!!!',
+                setCollar: false,
                 nextText: 3
             }
         ]
