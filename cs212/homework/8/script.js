@@ -195,7 +195,7 @@ const storyInfo = [
     },
     {
         id: 32,
-        text: 'Your still still hungry, but you have to keep moving on your adventure',
+        text: 'Your still hungry, but you have to keep moving on your adventure',
         options: [
             {
                 text: 'IDK',
@@ -217,23 +217,43 @@ const storyInfo = [
             },
             {
                 text: 'run as fast as you can like your life depends on it',
-                next: 103
+                nextText: 103
             },
             {
                 text: 'Go home this life is too much for you',
-                next: 14
+                nextText: 114
             }
         ]
     },
     {
         id: 6,
-        text: 'Your little dog heart is going crazy but now there is no turning back, you continue forward where you see ...',
+        text: 'Your little dog heart is going crazy but now there is no turning back, you continue forward and you see cat',
         options: [
             {
-                text: 'die'
+                text: 'Chase the cat',
+                nextText: 109
+            },
+            {
+                text: 'Don\'t fall victim instincts',
+                nextText: 25
             }
         ]
     },
+    {
+        id: 25,
+        text: 'Eventually after resisting the drive to chase the cat you are apprehended by the pound where you can attempt to escape or live',
+        options: [
+            {
+                text: 'attempt to escape',
+                nextText: 112
+            },
+            {
+                text: 'enjoy your time',
+                nextText: 111
+            }
+        ]
+    },
+
     {
         id: 95,
         text: 'Your now an older dog still waiting to be adopted at petsmart and you see another family walk in looking for a dog',
@@ -304,7 +324,7 @@ const storyInfo = [
     },
     {
         id: 110,
-        text: 'Ending #7: After being captured by the pound, you sit in a cage for an hour until your family comes to pick you up',
+        text: 'Ending #7: After being captured by the pound, you sit in a cage for an hour until your family comes to pick you up, but the trauma still lingers',
         end: true,
         endImage: 'Trauma.jpg'
     },
@@ -313,6 +333,18 @@ const storyInfo = [
         text: 'Ending #8: After being captured by the pound, you get thrown into a cage where you stay for the rest of your life',
         end: true,
         endImage: 'Borzoi_cage.jpg'
+    },
+    {
+        id: 112,
+        text: 'Ending #9: You successfully lockpick the cage with your nails, bite your way through the door and hop the fence to freedom.',
+        end: true,
+        endImage: 'Borzoi_escape.gif'
+    },
+    {
+        id: 15,
+        text: 'Ending #10: You return home with trauma and realize you ain\'t built for these streets',
+        end: true,
+        endImage: 'Trauma.jpg'
     }
 ];
 
