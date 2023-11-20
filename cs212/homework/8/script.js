@@ -170,7 +170,8 @@ const storyInfo = [
         options: [
             {
                 text: 'Sleep',
-                nextText: 107
+                collarEnd: true,
+                nextText: 110
             }
        ]
     },
@@ -392,10 +393,6 @@ const storyInfo = [
         ]
     },
     {
-        id: 107,
-        collarEnd: true
-    },
-    {
         id: 109,
         text: 'Ending #12: Chasing the cat you become blinded to your surroundings eventually you realise too late that your on the road, then BAM!!!',
         end: true,
@@ -471,14 +468,26 @@ const storyInfo = [
         id: 115,
         text: 'Ending #11: After multiple hours of looking for your home you find that welcome mat at your front door and begin to bark for your family, until they eventually open the door for you to come back in',
         end: true,
-        endImage: 'Borzoi_backhome.jpg' ,
+        endImage: 'Borzoi_backhome.gif',
         options: [
             {
                 text: 'Restart',
                 nextText: 1
             }
         ]
-    }
+    },
+    {
+        id: 116,
+        text: 'Ending #14: Taking the shortcut you run into a gang of street dogs, you try to run away, but are unable to escape the dangerous dogs',
+        end: true,
+        endImage: 'Borzoi_vs_dogs.jpeg',
+        options: [
+            {
+                text: 'Restart',
+                nextText: 1
+            }
+        ]
+    },    
 ];
 
 startGame()
