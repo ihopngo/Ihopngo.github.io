@@ -17,9 +17,11 @@ function showText(textInfo) {
     
     if (currentStoryItem.end) {
         endingImage(currentStoryItem.endImage);
-        if (currentStoryItem.condition && currentStoryItem.condition()) {
-            showRestartButton();
-        } else {
+        if (currentStoryItem.collarEnd && currentStoryItem.setCollar) {
+            showText(110)
+            endingImage(currentStoryItem.endImage);
+        } 
+        else {
             showOptions(textInfo);
         }
     } else {
