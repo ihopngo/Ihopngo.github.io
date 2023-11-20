@@ -320,7 +320,8 @@ const storyInfo = [
     },
     {
         id: 107,
-        collarEnd: true,
+        end: true,
+        collarEnd: true
     },
     {
         id: 110,
