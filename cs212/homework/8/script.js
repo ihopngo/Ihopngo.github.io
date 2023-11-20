@@ -3,6 +3,7 @@ const buttonsElement = document.getElementById('buttons')
 const imageElement = document.getElementById('image')
 
 let collar = {}
+let acceptedCollar = false;
 
 function startGame() {
     collar = {}
@@ -19,9 +20,12 @@ function showText(textInfo) {
     
     if (currentStoryItem.end) {
         endingImage(currentStoryItem.endImage);
-        showOptions(textInfo);
-    } 
-    else {
+        if (currentStoryItem.condition && currentStoryItem.condition()) {
+            showRestartButton();
+        } else {
+            showOptions(textInfo);
+        }
+    } else {
         showOptions(textInfo);
     }
 }
@@ -55,7 +59,7 @@ function buttonOptions(option) {
 
     else if (option.collarEnd) {
         if (acceptedCollar) {
-            showText(hasCollar)
+            showText(110)
             endingImage(option.endImage);
         } 
         else {
@@ -171,7 +175,6 @@ const storyInfo = [
             {
                 text: 'Sleep',
                 collarEnd: true,
-                nextText: 110
             }
        ]
     },

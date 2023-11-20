@@ -89,12 +89,13 @@ h1 {
     grid-template-rows: 1;
     margin: 20px 5px 5px 5px;
     gap: 8px;
+    padding: 10px;
 }
 
 .button {
     background-color: darkorange;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     color: white;
     font-size: 1rem;
 }
