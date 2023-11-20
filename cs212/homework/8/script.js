@@ -290,7 +290,7 @@ const storyInfo = [
             },
             {
                 text: 'enjoy your time',
-                nextText: 111
+                collarEnd: true                
             }
         ]
     },
