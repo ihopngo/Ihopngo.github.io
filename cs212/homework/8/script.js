@@ -67,6 +67,10 @@ function buttonOptions(option) {
         }
     }
 
+    else if (option.restart) {
+        startGame()
+    }
+
     else if (option.end) {
         endingImage(option.endImage);
         showText(option.nextText);
@@ -331,7 +335,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -343,7 +347,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -355,7 +359,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -367,7 +371,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                nrestart: true
             }
         ]
     },
@@ -379,7 +383,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -391,7 +395,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -403,7 +407,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -415,7 +419,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -427,7 +431,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -439,7 +443,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -451,7 +455,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -463,7 +467,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -475,7 +479,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -487,7 +491,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },    
