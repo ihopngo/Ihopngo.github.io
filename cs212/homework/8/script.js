@@ -58,17 +58,16 @@ function buttonOptions(option) {
 
     else if (option.collarEnd) {
         if (acceptedCollar) {
-            showText(110)
+            showText(110) ;
             endingImage(option.endImage);
-        } 
-        else {
-            showText(noCollar)
+        } else if (!acceptedCollar) {
+            showText(noCollar);
             endingImage(option.endImage);
         }
     }
 
     else if (option.restart) {
-        startGame()
+        startGame();
     }
 
     else if (option.end) {
