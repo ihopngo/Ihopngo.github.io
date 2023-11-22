@@ -373,7 +373,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nrestart: true
+                restart: true
             }
         ]
     },
