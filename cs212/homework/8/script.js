@@ -6,8 +6,11 @@ let collar = {}
 let acceptedCollar = false;
 
 function startGame() {
-    collar = {}
+    collar = {};
+    acceptedCollar = false;
+    imageElement.innerHTML = '';
     showText(1)
+    
 }
 
 function showText(textInfo) {
@@ -58,7 +61,7 @@ function buttonOptions(option) {
 
     else if (option.collarEnd) {
         if (acceptedCollar) {
-            showText(110) ;
+            showText(110);
             endingImage(option.endImage);
         } else if (!acceptedCollar) {
             showText(noCollar);
