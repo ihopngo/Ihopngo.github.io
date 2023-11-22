@@ -22,7 +22,6 @@ function showText(textInfo) {
         endingImage(currentStoryItem.endImage);
         if (currentStoryItem.collarEnd && currentStoryItem.setCollar) {
             showText(110)
-            endingImage(currentStoryItem.endImage);
         } 
         else {
             showOptions(textInfo);
@@ -62,10 +61,9 @@ function buttonOptions(option) {
     else if (option.collarEnd) {
         if (acceptedCollar) {
             showText(110);
-            endingImage(option.endImage);
-        } else if (!acceptedCollar) {
+        } 
+        else if (!acceptedCollar) {
             showText(noCollar);
-            endingImage(option.endImage);
         }
     }
 
