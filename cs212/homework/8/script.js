@@ -23,6 +23,7 @@ function showText(textInfo) {
         if (currentStoryItem.collarEnd && currentStoryItem.setCollar) {
             showText(110)
         } 
+        
         else {
             showOptions(textInfo);
         }
@@ -128,7 +129,7 @@ const storyInfo = [
     },
     {
         id: 4,
-        text: 'After running outside you have two options, you can go left where you see a road with tons of cars driving by really fast or you can go right where it is just tons of houses for as long as you can see?',
+        text: 'After running outside you have two options, you can go left where you see a road with tons of cars driving by really fast or you can go right where it is just tons of houses for as long as you can see',
         options: [
             {
                 text: 'go left',
@@ -365,7 +366,7 @@ const storyInfo = [
     },
     {
         id: 104,
-        text: 'Ending #4: The ride ends at a house where you are met with a child who hugs you and evenrtually you get used to this family and you live with them for the rest of your life',
+        text: 'Ending #4: The ride ends at a house where you\'re met with a child who hugs you and eventually you get used to this family and you live with them for the rest of your life',
         end: true,
         endImage: 'New_family.jpeg',
         options: [
