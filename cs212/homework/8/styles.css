@@ -106,10 +106,10 @@ h1 {
 
 img {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     min-width: 200px;
     height: auto;
-    max-height: 500px;
+    max-height: 600px;
     min-height: 200px;
 }
 
