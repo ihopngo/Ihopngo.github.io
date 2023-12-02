@@ -6,8 +6,11 @@ let collar = {}
 let acceptedCollar = false;
 
 function startGame() {
-    collar = {}
+    collar = {};
+    acceptedCollar = false;
+    imageElement.innerHTML = '';
     showText(1)
+    
 }
 
 function showText(textInfo) {
@@ -19,8 +22,8 @@ function showText(textInfo) {
         endingImage(currentStoryItem.endImage);
         if (currentStoryItem.collarEnd && currentStoryItem.setCollar) {
             showText(110)
-            endingImage(currentStoryItem.endImage);
         } 
+        
         else {
             showOptions(textInfo);
         }
@@ -58,13 +61,15 @@ function buttonOptions(option) {
 
     else if (option.collarEnd) {
         if (acceptedCollar) {
-            showText(110)
-            endingImage(option.endImage);
+            showText(110);
         } 
-        else {
-            showText(noCollar)
-            endingImage(option.endImage);
+        else if (!acceptedCollar) {
+            showText(noCollar);
         }
+    }
+
+    else if (option.restart) {
+        startGame();
     }
 
     else if (option.end) {
@@ -124,7 +129,7 @@ const storyInfo = [
     },
     {
         id: 4,
-        text: 'After running outside you have two options, you can go left where you see a road with tons of cars driving by really fast or you can go right where it is just tons of houses for as long as you can see?',
+        text: 'After running outside you have two options, you can go left where you see a road with tons of cars driving by really fast or you can go right where it is just tons of houses for as long as you can see',
         options: [
             {
                 text: 'go left',
@@ -331,7 +336,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -343,7 +348,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -355,19 +360,19 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
     {
         id: 104,
-        text: 'Ending #4: The ride ends at a house where you are met with a child who hugs you and evenrtually you get used to this family and you live with them for the rest of your life',
+        text: 'Ending #4: The ride ends at a house where you\'re met with a child who hugs you and eventually you get used to this family and you live with them for the rest of your life',
         end: true,
         endImage: 'New_family.jpeg',
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -379,7 +384,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -391,7 +396,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -403,7 +408,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -415,7 +420,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -427,7 +432,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -439,7 +444,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -451,7 +456,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -463,7 +468,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -475,7 +480,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },
@@ -487,7 +492,7 @@ const storyInfo = [
         options: [
             {
                 text: 'Restart',
-                nextText: 1
+                restart: true
             }
         ]
     },    
