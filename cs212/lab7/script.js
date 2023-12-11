@@ -1,26 +1,22 @@
-const express = require('express');
-const app = express();
-const port = 3000;
-
-// Use built-in middleware for parsing the request body
-app.use(express.urlencoded({ extended: true }));
-
-app.post('/', (req, res) => {
-  const { noun, adjective, verb, place, color } = req.body;
-
-  // Include the borzoi in the mad lib story
-  const madLib = `Once upon a time, there was a ${adjective} ${noun} who loved to ${verb} in a ${color} ${place}. This adventurous ${noun} was a borzoi named Boris, who embarked on a thrilling journey.`;
-
-  res.send(madLib);
-});
-
-// Serve static files from the 'public' directory
-app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-});
-
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+  
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+  
+      // Collect form data
+      const formData = new FormData(form);
+      const noun = formData.get('noun');
+      const adjective = formData.get('adjective');
+      const verb = formData.get('verb');
+      const place = formData.get('place');
+      const color = formData.get('color');
+  
+      // Combine form data into a Mad Lib string
+      const madLib = `Once upon a time, a ${adjective} ${noun} was adopted by a loving family. The warm home and treats quickly made our borzoi, Boris, a cherished member. One day, Boris felt a calling to explore beyond the cozy home. With a wag of his tail, Boris embarked on a daring journey, trotting through ${place}, crossing fields of ${color} flowers. Though Boris temporarily ran away, the memories of his escapades became legendary, and the family eagerly awaited his return.`;
+  
+      // Update a specific element with the generated Mad Lib
+      const resultContainer = document.getElementById('result-container');
+      resultContainer.textContent = madLib;
+    });
+  });

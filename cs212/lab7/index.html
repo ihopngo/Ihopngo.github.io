@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mad lib</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <form action="/" method="post">
+    <!-- Your HTML content here -->
+    <form action="/submit" method="post">
         <label for="noun">Noun:</label>
         <input type="text" id="noun" name="noun" required><br>
     
@@ -24,5 +27,8 @@
     
         <input type="submit" value="Generate Mad Lib">
     </form>
+
+    <!-- Container to display the generated Mad Lib -->
+    <div id="result-container"></div>
 </body>
 </html>
