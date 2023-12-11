@@ -8,27 +8,56 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Your HTML content here -->
-    <form action="/submit" method="post">
-        <label for="noun">Noun:</label>
-        <input type="text" id="noun" name="noun" required><br>
-    
-        <label for="adjective">Adjective:</label>
-        <input type="text" id="adjective" name="adjective" required><br>
-    
-        <label for="verb">Verb:</label>
-        <input type="text" id="verb" name="verb" required><br>
-    
-        <label for="place">Place:</label>
-        <input type="text" id="place" name="place" required><br>
-    
-        <label for="color">Color:</label>
-        <input type="text" id="color" name="color" required><br>
-    
-        <input type="submit" value="Generate Mad Lib">
-    </form>
+    <div class="layout">
+        <header>
+            <div class="top">
+            <h1>ihop n go</h1>
+            </div>
+        </header>
 
-    <!-- Container to display the generated Mad Lib -->
-    <div id="result-container"></div>
+        <nav class="middle">
+            <h2>Menu</h2>
+            <p><a href="https://ihopngo.com/cs212/homework/7/index.html">About</a></p>
+            <p><a href="https://ihopngo.com/cs212/homework/7/index.html">Contact</a></p>
+            <p><a href="https://ihopngo.com/cs212/homework/7/index.html">Borzoi</a></p>
+            <p><a href="https://ihopngo.com/cs212/homework/7/index.html">Info</a></p>
+        </nav>
+
+        <main>
+            <h2>Madlib</h2>
+            <div class="madlib">
+                <form action="/submit" method="post">
+                    <label for="noun">Noun:</label>
+                    <input type="text" id="noun" name="noun" required><br>
+                
+                    <label for="adjective">Adjective:</label>
+                    <input type="text" id="adjective" name="adjective" required><br>
+                
+                    <label for="verb">Verb:</label>
+                    <input type="text" id="verb" name="verb" required><br>
+                
+                    <label for="place">Place:</label>
+                    <input type="text" id="place" name="place" required><br>
+                
+                    <label for="color">Color:</label>
+                    <input type="text" id="color" name="color" required><br>
+                
+                    <input class="button" type="submit" value="Generate Mad Lib">
+                </form>
+            </div>
+            
+            <h2>Madlib Results</h2>
+            <div id="result-container"></div>
+        </main>
+
+        <aside>
+            <h2>Borzoi plush</h2>
+            <a href="https://www.amazon.com/WeightedPlush-Borzoi-Dog-Stuffed-Birthday/dp/B0BYWXL2NV/ref=sr_1_1?crid=UU2PU113E84H&keywords=borzoi&qid=1699774362&sprefix=borzoi%2Caps%2C125&sr=8-1&th=1"><img src="images/Bozoi_Plush.jpg">
+            </a>
+        </aside>
+
+        <footer>
+        </footer >
+    </div>
 </body>
 </html>

@@ -48,7 +48,7 @@ main {
     font-size: 1.5rem;    
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
 }
 
 aside {
@@ -71,16 +71,17 @@ h1 {
     font-size: 6rem;
 }
 
-.game-container {
+form {
     max-width: 700px;
     min-width: 200px;
     border: 5px solid darkorange;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 15px;
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: fit-content;
 }
 
 .button-grid {
@@ -111,6 +112,10 @@ img {
     height: auto;
     max-height: 500px;
     min-height: 200px;
+}
+
+#result-container {
+    color: black;
 }
 
 @media (max-width: 1024px) {

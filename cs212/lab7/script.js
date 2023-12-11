@@ -1,22 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('form');
-  
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-  
-      // Collect form data
-      const formData = new FormData(form);
-      const noun = formData.get('noun');
-      const adjective = formData.get('adjective');
-      const verb = formData.get('verb');
-      const place = formData.get('place');
-      const color = formData.get('color');
-  
-      // Combine form data into a Mad Lib string
-      const madLib = `Once upon a time, a ${adjective} ${noun} was adopted by a loving family. The warm home and treats quickly made our borzoi, Boris, a cherished member. One day, Boris felt a calling to explore beyond the cozy home. With a wag of his tail, Boris embarked on a daring journey, trotting through ${place}, crossing fields of ${color} flowers. Though Boris temporarily ran away, the memories of his escapades became legendary, and the family eagerly awaited his return.`;
-  
-      // Update a specific element with the generated Mad Lib
-      const resultContainer = document.getElementById('result-container');
-      resultContainer.textContent = madLib;
-    });
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const noun = formData.get('noun');
+    const adjective = formData.get('adjective');
+    const verb = formData.get('verb');
+    const place = formData.get('place');
+    const color = formData.get('color');
+
+    const madLib = `In a lively ${adjective} setting, a spirited ${noun} with ${color} features loved to ${verb} around. Adopted by a loving community, this remarkable ${noun} brought joy to their cozy ${place}. One day, the adventurous spirit of the ${noun} led it to explore beyond the familiar surroundings, engaging in ${verb} and making new connections. Despite a brief venture, the community eagerly awaited the return of their lively ${noun}, anticipating stories as vibrant as the spirited activities of their unique companion.`;
+
+
+    const resultContainer = document.getElementById('result-container');
+    resultContainer.textContent = madLib;
   });
+});
